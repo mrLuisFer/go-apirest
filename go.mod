@@ -1,4 +1,4 @@
-module go-apirest
+module github.com/mrLuisFer/go-apirest
 
 go 1.17
 
