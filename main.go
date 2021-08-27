@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"os"
+
+	"github.com/gin-gonic/gin"
+	"github.com/mrLuisFer/go-apirest/src/methods"
 )
 
 func GetPosts(context *gin.Context) {
@@ -15,6 +17,7 @@ func GetPosts(context *gin.Context) {
 func main() {
 	router := gin.Default()
 
+	router.GET("/", methods.GetRootHandler)
 	router.GET("/posts", GetPosts)
 
 	error := router.Run()
