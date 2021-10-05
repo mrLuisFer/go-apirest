@@ -8,6 +8,7 @@ import (
 func main() {
 
 	routerGin := gin.Default()
+	routerGin.LoadHTMLGlob("templates/*.tmpl")
 
 	router.Init(routerGin)
 }

@@ -12,7 +12,7 @@ func Init(router *gin.Engine) {
 	var port string = ":3000"
 
 	router.GET("/", methods.GetRootHandler)
-	router.GET("/posts", methods.GetPsts)
+	router.GET("/posts", methods.GetPosts)
 
 	error := router.Run(port)
 
