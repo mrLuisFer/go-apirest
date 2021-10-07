@@ -13,6 +13,7 @@ func Init(router *gin.Engine) {
 
 	router.GET("/", methods.GetRootHandler)
 	router.GET("/photos", methods.GetPhotos)
+	router.GET("/photos/:id", methods.GetPhoto)
 
 	error := router.Run(port)
 

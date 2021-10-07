@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	routerGin := gin.Default()
 	routerGin.LoadHTMLGlob("src/templates/*.tpml")
 
